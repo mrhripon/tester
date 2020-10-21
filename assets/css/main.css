@@ -1,0 +1,329 @@
+
+/* Base Css Start  */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@font-face {
+    font-family: kohinurBanglaBold;
+    src: url(../fonts/KohinoorBanglaBold.otf);
+}
+@font-face {
+    font-family: kohinurBanglaMedium;
+    src: url(../fonts/KohinoorBanglaBold.otf);
+}
+@font-face {
+  font-family: kohinurBanglaRegular;
+  src: url(../fonts/KohinoorBangla.ttc);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: kohinurBanglaMedium;
+    margin: 0 auto;
+    color: #1a1a1a;
+}
+:root {
+    --primary-color: #0046A0;
+    --secondary-color: #1a1a1a;
+}
+.container {
+	max-width: 1054px;
+	margin: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+div.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+/* Base Css End */
+
+/* header css start  */
+.header-area {
+	position: relative;
+}
+.curve-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 480px;
+	z-index: -1;
+	width: 100%;
+	overflow: hidden;
+}
+.curve-shape {
+	position: absolute;
+	width: 110%;
+	bottom: -15px;
+	z-index: 1;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.curve-bg::after {
+	border-top: 15px solid var(--primary-color);
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(circle at 47% 36%, #fff, #90f8809c 67%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	content: "";
+}
+.header-area .container {
+    position: relative;
+    z-index: 1;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 59px;
+  }
+  .logo-first-part {
+    max-width: 72px;
+    width: 100%;
+    margin-right: 15px;
+  }
+  .logo-second-part {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .logo-second-part img {
+    max-width: 145px;
+    width: 100%;
+  }
+  .header-content-wrapper {
+	display: flex;
+}
+  .header-left-part {
+	padding-top: 52px;
+	padding-left: 120px;
+	flex: 0 0 543px;
+	max-width: 543px;
+}
+.header-left-part h1 {
+	font-size: 36px;
+	line-height: normal;
+	font-family: kohinurBanglaBold;
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #1a1a1a;
+}
+
+  .header-right-image-wrap {
+    max-width: 420px;
+  }
+  .header-right-image-wrap img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .header-right-part {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    flex: 0 0 calc(100% - 543px);
+    max-width: calc(100% - 543px);
+    margin-bottom: -49px;
+  }
+  .playstore-link {
+    display: inline-block;
+  }
+  .playstore-link img {
+    max-width: 225px;
+    width: 225px;
+  }
+/* header css end */
+
+/* twin-area css start  */
+
+.section-img img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .twin-g-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 60px;
+    padding: 0 40px;
+  }
+  .twin-area {
+    padding-top: 50px;
+    padding-bottom: 47px;
+  }
+  .section-cmn-content-wrap h3 {
+    font-size: 28px;
+    margin-bottom: 23px;
+    font-family: kohinurBanglaBold;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1a1a1a;
+  }
+  .section-cmn-content-wrap p {
+    font-size: 23px;
+    font-family: kohinurBanglaReular;
+    line-height: 1.6;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #1a1a1a;
+  }
+  .twin-g-wrapper.sec-up-turn {
+    margin-top: -80px;
+  }
+  
+.twin-g-wrapper.first .section-img img {
+  max-width: 535px;
+  width: 530px;
+  margin-left: -25px;
+}
+.twin-g-wrapper.first {
+  grid-template-columns: 1.3fr 1fr;
+  grid-gap: 30px;
+}
+/* twin-area css end */
+
+
+/* footer css start  */
+.footer-top-area {
+	background-color: #f8f5f5;
+	padding-top: 45px;
+	padding-bottom: 70px;
+}
+  .input-inside label {
+    display: block;
+    font-family: Lato;
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #1a1a1a;
+    margin-left: 17px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  .input-inside input,
+  .input-inside textarea {
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #dfdfdf;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #979797;
+    font-family: 'Lato', sans-serif;
+  }
+  .input-inside input:focus,
+  .input-inside textarea:focus {
+    border-color: #448aff;
+    outline: none;
+  }
+  .input-inside textarea {
+    height: 100%;
+    padding-top: 10px;
+  }
+  .ft-twin-g-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 28px;
+  }
+  
+.copyright-text p {
+    font-size: 14px;
+    font-family: Lato;
+    color: #fff;
+  }
+  .copyright-text {
+    text-align: center;
+  }
+  .footer-bottom-area {
+    background: #0046a0;
+    padding: 23px 0;
+  }
+  .footer-left h3 {
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    margin-bottom: 17px;
+  }
+  .input-inside {
+    margin-bottom: 19px;
+  }
+  .box-btn {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: #448aff;
+    color: #fff;
+    font-size: 14px;
+    transition: .3s;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .box-btn:hover {
+    background: #0046A0;
+  }
+  
+.footer-one-third-wrapper {
+  display: grid;
+  grid-template-columns: 65% calc(35% - 30px);
+  grid-gap: 30px;
+}
+.footer-right {
+  position: relative;
+  padding-left: 30px;
+  padding-top: 41px;
+}
+.footer-right::before {
+  width: 1px;
+  height: 258px;
+  background: #d0cdcd;
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.footer-right p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.19;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.playstore.in-ft {
+  display: block;
+}
+.playstore.in-ft img {
+  width: 184px;
+}
+/* footer css end */
